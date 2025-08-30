@@ -9,7 +9,8 @@ export const database = {
       length: 3,
       location: "Great Barrier Reef",
       diet: "Omnivore",
-      image: "https://example.com/images/nemo.jpg",
+      image:
+        "https://cdn11.bigcommerce.com/s-fh5tkm/images/stencil/1280x1280/products/2149/53481/Blueeee__55845.1711988016.jpg?c=2?imbypass=on",
     },
     {
       name: "Dory",
@@ -17,7 +18,8 @@ export const database = {
       length: 5,
       location: "Great Barrier Reef",
       diet: "Omnivore",
-      image: "https://example.com/images/dory.jpg",
+      image:
+        "https://www.thesprucepets.com/thmb/wDeRwAdKFebaZByN_uLVLX45n9Y=/2542x0/filters:no_upscale():strip_icc()/GettyImages-1134104736-97ebbc8333b3490ea4674eb0b3ef85d0.jpg",
     },
     {
       name: "Gisselle",
@@ -72,20 +74,6 @@ export const database = {
       diet: "Omnivore",
       image:
         "https://cdn.shopify.com/s/files/1/0024/1788/5284/files/mandarin-fish.jpg",
-    },
-  ],
-  tips: [
-    {
-      topic: "Water Temperature",
-      text: "Maintain a consistent water temperature between 75-80°F (24-27°C) for most tropical fish.",
-    },
-  ],
-  locations: [
-    {
-      name: "Great Barrier Reef",
-      country: "Australia",
-      description:
-        "The Great Barrier Reef is the world's largest coral reef system, supporting a diverse array of marine life.",
     },
   ],
 };

@@ -1,0 +1,10 @@
+/* This file will contain the CSS styles for the layout of our project. */
+
+/* This file will contain the CSS styles for the fish list cards grid layout. */
+#fish-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
