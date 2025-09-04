@@ -1,11 +1,20 @@
 // File to handle the rendering of the location list.
-export const database = {
-  locations: [
-    {
-      name: "Great Barrier Reef",
-      country: "Australia",
-      description:
-        "The Great Barrier Reef is the world's largest coral reef system, supporting a diverse array of marine life.",
-    },
-  ],
+import { database } from "./aquariumData.js";
+
+export const generateLocationsHTML = () => {
+  // Generate an HTML representation of each fish
+  // initialize an empty string variable called fishHTML to store the generated HTML markup.
+  let locationHTML = "";
+
+  for (const location of database.locations) {
+    locationHTML += `
+           <article class="Locations">
+               <section class="locations__details">
+                   <h2 class="location__name">${location.name}</h2>
+                   <p class="location__description">${location.description}</p>
+               </section>
+           </article>
+       `;
+  }
+  return locationHTML;
 };

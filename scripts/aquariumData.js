@@ -76,4 +76,34 @@ export const database = {
         "https://cdn.shopify.com/s/files/1/0024/1788/5284/files/mandarin-fish.jpg",
     },
   ],
+  tips: [
+    {
+      topic: "Water Temperature",
+      text: "Maintain a consistent water temperature between 75-80°F (24-27°C) for most tropical fish.",
+    },
+    {
+      topics: "Daily Checks",
+      text: "Observe the tank for at least 10 minutes daily to spot any issues, monitor temperature, and ensure proper equipment function.",
+    },
+    {
+      topics: "Water Changes",
+      text: "Perform at least 25% water changes monthly using properly mixed saltwater.",
+    },
+    {
+      topics: "Feeding",
+      text: "Feed your fish small amounts of a varied diet of frozen foods, ensuring they finish their portions within a few minutes.",
+    },
+    {
+      topics: "Slow Introduction",
+      text: "Add fish and corals slowly over time to avoid overstocking and stress. ",
+    },
+  ],
+  locations: [
+    {
+      name: "Great Barrier Reef",
+      country: "Australia",
+      description:
+        "The Great Barrier Reef is the world's largest coral reef system, supporting a diverse array of marine life.",
+    },
+  ],
 };

@@ -1,1 +1,87 @@
-/* The main CSS file for styling the aquarium showcase. */
+/* main.css - ALL THE PRETTY STUFF (colors, borders, fonts) */
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #06b4b4;
+}
+
+/* Header styling */
+header {
+    background-color: #2c5aa0;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Fish section styling */
+#fishList {
+    background-color: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+}
+
+/* Location section styling */
+#locationList {
+    background-color: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+}
+
+/* Tips section styling */
+#tipList {
+    background-color: rgb(64, 163, 239);
+    border: 2px solid #666;
+    border-radius: 5px;
+}
+
+/* Individual fish cards styling */
+.fish-card {
+    background-color: #fdffe6;
+    color: #000000;
+    border: 2px solid #999;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Individual location cards styling */
+.location-card {
+    background-color: #f0f8e6;
+    color: #4a7c59;
+    border: 2px solid #999;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Tips styling */
+.tip {
+    border-bottom: 1px solid #000000;
+    color: #333;
+}
+
+.tip:before {
+    color: #000000;
+    font-weight: bold;
+}
+
+.tip:last-child {
+    border-bottom: none;
+}
+
+/* Hover effects */
+.fish-card:hover {
+    background-color: #d1e7ff;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    background-color: #e6f0d6;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}

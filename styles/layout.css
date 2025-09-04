@@ -1,10 +1,109 @@
-/* This file will contain the CSS styles for the layout of our project. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-/* This file will contain the CSS styles for the fish list cards grid layout. */
-#fish-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* Body layout */
+body {
     padding: 20px;
+}
+
+/* Header layout */
+header {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main container layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "fish tips"
+        "locations tips";
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section positioning */
+#fishList {
+    grid-area: fish;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#locationList {
+    grid-area: locations;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#tipList {
+    grid-area: tips;
+    padding: 20px;
+}
+
+/* Force all images to be smaller */
+img {
+    max-width: 100px !important;
+    max-height: 100px !important;
+    border: 5px solid black !important;
+}
+
+/* Individual card layout */
+.fish-card,
+.location-card {
+    padding: 15px;
+    text-align: center;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image sizing */
+.fish-card img,
+.location-card img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Tips layout */
+.tip {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tip:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "fish"
+            "locations"
+            "tips";
+    }
+    
+    #fishList,
+    #locationList {
+        grid-template-columns: 1fr;
+    }
 }
